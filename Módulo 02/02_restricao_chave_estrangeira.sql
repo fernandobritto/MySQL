@@ -1,0 +1,1 @@
+-- Chave estrangeira (foreign key)
