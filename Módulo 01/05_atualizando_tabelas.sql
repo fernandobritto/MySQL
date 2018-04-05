@@ -1,3 +1,4 @@
+-- Adicionar uma coluna, Remover uma coluna, Alterar o nome de uma coluna e Alterar o tipo de dados de uma coluna  
 -- Adicionando uma coluna na tabela 
 ALTER TABLE books ADD year_publish decimal(4,0) AFTER author;
 
