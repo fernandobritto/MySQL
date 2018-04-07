@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 create table books
 (
 	id int unsigned NOT NULL auto_increment,
@@ -29,12 +30,6 @@ create table author
     UNIQUE (email)  
     	
 );
-
-
-
-
-
---  ********************************************* --
 
 
 
