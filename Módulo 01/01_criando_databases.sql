@@ -1,5 +1,22 @@
 -- Criando um Banco de Dados
-create database infoenter;
+CREATE DATABASE infoenter;
+
 
 -- Mostrando todos os bancos que há no SGBD
-show databases;
+SHOW DATABASES;
+
+
+-- Criando um usuário no MySQL
+CREATE USER 'admin'@'localhost' IDENTIFIED BY 'Mudar123';
+
+
+-- Concedendo permissões para um usuário no MySQL
+GRANT ALL PRIVILEGES ON infoenter.* TO 'admin'@'localhost';
+
+
+-- Revogando permissões para um usuário no MySQL
+REVOKE SELECT, DROP ON infoenter.* FROM 'admin'@'localhost';
+
+
+-- Alterando a senha de um usuário no MySQL
+UPDATE mysql.user SET Password=MD5('mudarABC') WHERE user = 'admin';
