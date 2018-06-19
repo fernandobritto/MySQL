@@ -1,15 +1,9 @@
 -- Criando uma Tabela
-create table books
-(
-	id int unsigned NOT NULL auto_increment,
-    title varchar(255) NOT NULL,
-    author varchar(255) NOT NULL,
-    price decimal(10,2) NOT NULL,
+CREATE TABLE clientes(
+	id INT UNSIGNED NOT NULL AUTO_INCREMENT,
+    nome VARCHAR(255) NOT NULL,
+    sobrenome VARCHAR(255) NOT NULL,
     
-    -- chave primaria 
-    primary key (id)
-
+-- Chave Primaria
+	PRIMARY KEY (id)
 );
-
-
-show tables;
