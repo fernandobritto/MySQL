@@ -1,6 +1,10 @@
 -- Adicionando dados na Tabela
--- Execute a instrução a seguir para inserir informações na tabela books
+-- Execute a instrução a seguir para inserir informações na tabela clientes
 
-INSERT INTO books ( title, author, price)
-	VALUES ("Aprendendo SQL", "Beaulieu", 54.90),
-			("MySQL para Iniciantes", "Wesley", 15.99);
+INSERT INTO clientes ( nome, sobrenome)
+	VALUES ("João", "Silva"),
+("Maria", "Souza");
+
+
+-- Verificar as informações da tabela 
+select * from clientes;
