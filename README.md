@@ -1,2 +1,2 @@
 # MySQL
-Academy of database
+
