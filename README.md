@@ -1,4 +1,4 @@
 # MySQL
 
-Academy of Data Base
+Academy of database
 
