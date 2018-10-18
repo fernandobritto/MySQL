@@ -7,4 +7,4 @@ INSERT INTO clientes ( nome, sobrenome)
 
 
 -- Verificar as informações da tabela 
-select * from clientes;
+SELECT * FROM clientes;
