@@ -1,7 +1,7 @@
 -- Recuperando registros de uma tabela
-select * from books;
+SELECT * FROM books;
 
-select * from books where author = "Beaulieu";
+SELECT * FROM books WHERE author = "Beaulieu";
 
 select id,title from books where author = "Beaulieu";
 
