@@ -1,7 +1,7 @@
 
 UPDATE livros
-	set title = 'Banco de dados para iniciantes', author = 'Michael T.'
-    where id = 2;
+	SET title = 'Banco de dados para iniciantes', author = 'Michael T.'
+    WHERE id = 2;
     
     
 
