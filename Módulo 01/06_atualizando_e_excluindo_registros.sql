@@ -9,7 +9,7 @@ delete from livros where id = 2;
 
 
 -- Remove todas as informações da tabela sem excluir a tabela 
-TRUNCATE TABLE banco.tabel;
+TRUNCATE TABLE banco.tabela;
 
 
 -- Excluir uma tabela e/ou um banco de dados
