@@ -4,7 +4,7 @@ UPDATE livros
     WHERE id = 2;
         
 
-delete from livros where title = 'Banco de dados para iniciantes';
+DELETE FROM livros WHERE title = 'Banco de dados para iniciantes';
 delete from livros where id = 2;
 
 
