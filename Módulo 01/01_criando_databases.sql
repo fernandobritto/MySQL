@@ -24,3 +24,6 @@ UPDATE mysql.user SET Password=MD5('mudarABC') WHERE user = 'admin';
 
 -- Mostra uma lista de contas de usuários do MySQL
 SELECT * FROM mysql.user;
+SELECT User,Host FROM mysql.user;
+
+
