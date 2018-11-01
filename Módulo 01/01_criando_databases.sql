@@ -2,7 +2,7 @@
 CREATE DATABASE infoenter;
 
 
--- Mostrando todos os bancos que há no SGBD
+-- Mostrando todos os bancos de dados que há no SGBD
 SHOW DATABASES;
 
 
@@ -20,3 +20,7 @@ REVOKE SELECT, DROP ON infoenter.* FROM 'admin'@'localhost';
 
 -- Alterando a senha de um usuário no MySQL
 UPDATE mysql.user SET Password=MD5('mudarABC') WHERE user = 'admin';
+
+
+-- Mostra uma lista de contas de usuários do MySQL
+SELECT * FROM mysql.user;
