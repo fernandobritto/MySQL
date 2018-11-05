@@ -7,11 +7,12 @@ SHOW DATABASES;
 
 
 -- Criando um usuário no MySQL
-CREATE USER 'admin'@'localhost' IDENTIFIED BY 'Mudar123';
+CREATE USER admin@'localhost' IDENTIFIED BY 'Mudar123';
 
 
 -- Concedendo permissões para um usuário no MySQL
 GRANT ALL PRIVILEGES ON infoenter.* TO 'admin'@'localhost';
+GRANT ALL ON *.* TO root@'localhost' WITH GRANT OPTION;
 
 
 -- Revogando permissões para um usuário no MySQL
