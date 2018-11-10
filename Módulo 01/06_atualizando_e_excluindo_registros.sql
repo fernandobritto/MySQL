@@ -5,7 +5,7 @@ UPDATE livros
         
 
 DELETE FROM livros WHERE title = 'Banco de dados para iniciantes';
-delete from livros where id = 2;
+DELETE from livros where id = 2;
 
 
 -- Remove todas as informações da tabela sem excluir a tabela 
