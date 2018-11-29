@@ -25,10 +25,8 @@ ALTER TABLE books rename livros;
 alter table books change nome author varchar(50);
 
 
-
 -- Modificando o tipo
 ALTER TABLE livros MODIFY id smallint(4) unsigned NOT NULL auto_increment;
 
 
 explain books;
-
