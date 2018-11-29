@@ -21,6 +21,11 @@ ALTER TABLE books DROP year_publish;
 ALTER TABLE books rename livros;
 
 
+-- Mudar o nome da coluna
+alter table books change nome author varchar(50);
+
+
+
 -- Modificando o tipo
 ALTER TABLE livros MODIFY id smallint(4) unsigned NOT NULL auto_increment;
 
