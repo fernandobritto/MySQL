@@ -17,6 +17,6 @@ DROP TABLE livros;
 
 show tables;
 
-DROP DATABASE infoenter;
+DROP DATABASE websolutions;
 
 show databases;
