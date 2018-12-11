@@ -9,9 +9,12 @@ SHOW DATABASES;
 -- Criando um usuário no MySQL
 CREATE USER admin@'localhost' IDENTIFIED BY 'Mudar123';
 
+-- Criando um usuário para o banco WebSolution
+CREATE USER 'admin'@'websolution' IDENTIFIED BY 'admin';
+
 
 -- Concedendo permissões para um usuário no MySQL
-GRANT ALL PRIVILEGES ON infoenter.* TO 'admin'@'localhost';
+GRANT ALL PRIVILEGES ON websolutions.* TO 'admin'@'localhost';
 GRANT ALL ON *.* TO root@'localhost' WITH GRANT OPTION;
 
 
