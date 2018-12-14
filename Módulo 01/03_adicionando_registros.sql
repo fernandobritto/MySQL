@@ -1,4 +1,4 @@
--- Adicionando dados na Tabela
+-- Adicionando registros na Tabela
 -- Execute a instrução a seguir para inserir informações na tabela clientes
 
 INSERT INTO clientes ( nome, sobrenome)
