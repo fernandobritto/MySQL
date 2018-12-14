@@ -1,4 +1,4 @@
--- Adicionando registros na Tabela
+-- Adicionando dados na Tabela
 -- Execute a instrução a seguir para inserir informações na tabela clientes
 
 INSERT INTO clientes ( nome, sobrenome)
@@ -6,5 +6,6 @@ INSERT INTO clientes ( nome, sobrenome)
 ("Maria", "Souza");
 
 
+-- Busca basica
 -- Verificar as informações da tabela 
 SELECT * FROM clientes;
