@@ -10,7 +10,7 @@ INSERT INTO books (title, author, year_publish, price)
    
 -- Alterando os dados de uma tabela 
 ALTER TABLE books MODIFY title varchar(300);
-ALTER TABLE books modify COLUMN cnpj varchar(14);
+ALTER TABLE books MODIFY COLUMN cnpj varchar(14);
 
 
 -- Excluir uma coluna da tabela 
@@ -27,7 +27,6 @@ ALTER TABLE books change nome author varchar(50);
 
 -- Modificando o tipo
 ALTER TABLE livros MODIFY id smallint(4) unsigned NOT NULL auto_increment;
-
 
 
 explain books;
