@@ -9,8 +9,8 @@ INSERT INTO books (title, author, year_publish, price)
    
    
 -- Alterando os dados de uma tabela 
-ALTER TABLE books MODIFY title VARCHAR(300);
-ALTER TABLE books MODIFY COLUMN cnpj VARCHAR(14);
+ALTER TABLE books MODIFY title varchar(300);
+ALTER TABLE books MODIFY COLUMN cnpj varchar(14);
 
 
 -- Excluir uma coluna da tabela 
@@ -18,11 +18,11 @@ ALTER TABLE books DROP year_publish;
 
 
 -- Renomeando uma tabela
-ALTER TABLE books rename livros;
+ALTER TABLE books RENAME livros;
 
 
 -- Mudar o nome da coluna
-ALTER TABLE books change nome author varchar(50);
+ALTER TABLE books CHANGE nome author varchar(50);
 
 
 -- Modificando o tipo
