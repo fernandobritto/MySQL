@@ -1,5 +1,5 @@
 -- Criando um Banco de Dados
-CREATE DATABASE webdesign;
+CREATE DATABASE lojadelivros;
 
 
 -- Mostrando todos os bancos de dados que há no SGBD
@@ -9,8 +9,8 @@ SHOW DATABASES;
 -- Criando um usuário no MySQL
 CREATE USER admin@'localhost' IDENTIFIED BY 'Mudar123';
 
--- Criando um usuário para o banco Web Design
-CREATE USER 'admin'@'webdesign' IDENTIFIED BY 'admin';
+-- Criando um usuário para o banco Loja de Livros
+CREATE USER 'admin'@'lojadelivros' IDENTIFIED BY 'admin';
 
 
 -- Concedendo permissões para um usuário no MySQL
@@ -23,7 +23,7 @@ REVOKE SELECT, DROP ON webdesign.* FROM 'admin'@'localhost';
 
 
 -- Alterando a senha de um usuário no MySQL
-UPDATE mysql.user SET Password=MD5('mudarABC') WHERE user = 'admin';
+UPDATE mysql.user SET Password=MD5('abc123') WHERE user = 'admin';
 
 -- Mostra uma lista de contas de usuários do MySQL
 SELECT * FROM mysql.user;
