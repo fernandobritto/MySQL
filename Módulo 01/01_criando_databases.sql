@@ -14,16 +14,21 @@ CREATE USER 'admin'@'lojadelivros' IDENTIFIED BY 'admin';
 
 
 -- Concedendo permissões para um usuário no MySQL
-GRANT ALL PRIVILEGES ON webdesign.* TO 'admin'@'localhost';
 GRANT ALL ON *.* TO root@'localhost' WITH GRANT OPTION;
+GRANT ALL ON *.* TO 'admin'@'lojadelivros' WITH GRANT OPTION;
 
 
 -- Revogando permissões para um usuário no MySQL
-REVOKE SELECT, DROP ON webdesign.* FROM 'admin'@'localhost';
+
 
 
 -- Alterando a senha de um usuário no MySQL
-UPDATE mysql.user SET Password=MD5('abc123') WHERE user = 'admin';
+UPDATE mysql.user SET Password=MD5('abc123') WHERE user = 'admin' AND host = 'lojadelivros';
+
+
+-- Excluindo um usuário do MySQL
+DROP USER 'admin'@'lojadelivros';
+
 
 -- Mostra uma lista de contas de usuários do MySQL
 SELECT * FROM mysql.user;
