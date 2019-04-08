@@ -1,11 +1,14 @@
 -- Criando uma Tabela
 CREATE TABLE clientes(
-    id INT UNSIGNED NOT NULL AUTO_INCREMENT,
-    nome VARCHAR(255) NOT NULL,
-    sobrenome VARCHAR(255) NOT NULL,
+    id_cliente INT UNSIGNED NOT NULL AUTO_INCREMENT,
+    nome VARCHAR(50) NOT NULL,
+    sobrenome VARCHAR(50) NOT NULL,
+    idade INT,
+    endereco varchar(100),
+    email varchar(50) NOT NULL,
     
 -- Chave Primaria
-	PRIMARY KEY (id)
+      PRIMARY KEY (id_cliente)
 );
 
 CREATE TABLE projetos(
