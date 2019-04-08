@@ -11,10 +11,9 @@ CREATE TABLE clientes(
       PRIMARY KEY (id_cliente)
 );
 
-CREATE TABLE projetos(
-    id_project INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    nome VARCHAR(255) NOT NULL,
-    tipo VARCHAR(155) NOT NULL,
-    data_inicio DATE,
-    data_final DATE
+
+CREATE TABLE ordens(
+    id_orden INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    valor_orden VARCHAR(255) NOT NULL,
+    id_cliente INT
 );
