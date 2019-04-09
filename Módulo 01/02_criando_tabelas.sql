@@ -12,6 +12,18 @@ CREATE TABLE clientes(
 );
 
 
+CREATE TABLE autor(
+    id_autor INT UNSIGNED NOT NULL AUTO_INCREMENT,
+    nome VARCHAR(50) NOT NULL,
+    sobrenome VARCHAR(50) NOT NULL,
+    data_nasc DATE,
+    email varchar(50) NOT NULL,
+    
+-- Chave Primaria
+      PRIMARY KEY (id_autor)
+);
+
+
 CREATE TABLE ordens(
     id_orden INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
     valor_orden VARCHAR(255) NOT NULL,
@@ -19,7 +31,7 @@ CREATE TABLE ordens(
 );
 
 CREATE TABLE ordens_items(
-	id_item INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    id_item INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
     item_preco DECIMAL(4,2) NOT NULL,
     item_coment VARCHAR(250)
 
