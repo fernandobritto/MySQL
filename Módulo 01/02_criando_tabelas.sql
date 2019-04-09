@@ -17,3 +17,10 @@ CREATE TABLE ordens(
     valor_orden VARCHAR(255) NOT NULL,
     id_cliente INT
 );
+
+CREATE TABLE ordens_items(
+	id_item INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    item_preco DECIMAL(4,2) NOT NULL,
+    item_coment VARCHAR(250)
+
+);
