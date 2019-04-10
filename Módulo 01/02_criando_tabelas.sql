@@ -38,13 +38,13 @@ CREATE TABLE ordens_items(
 );
 
 CREATE TABLE livros(
-	id_livro INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
-	id_autor INT NOT NULL,
-	title int NOT NULL,
-	data_publicacao date NOT NULL,
-	data_aquisicao date NOT NULL,
-	livro_coment varchar(250),
-	preco DECIMAL(4,2) NOT NULL
+    id_livro INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    id_autor INT NOT NULL,
+    title int NOT NULL,
+    data_publicacao date NOT NULL,
+    data_aquisicao date NOT NULL,
+    livro_coment varchar(250),
+    preco DECIMAL(4,2) NOT NULL
 	
 );
 
