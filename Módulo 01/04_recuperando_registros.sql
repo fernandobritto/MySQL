@@ -1,5 +1,5 @@
 -- Recuperando registros de uma tabela
-SELECT * FROM books;
+SELECT * FROM clientes;
 
 SELECT * FROM books WHERE author = "Fernando Britto";
 
