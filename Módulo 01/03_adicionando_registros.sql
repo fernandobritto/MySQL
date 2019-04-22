@@ -1,9 +1,12 @@
 -- Adicionando dados na Tabela
 -- Execute a instrução a seguir para inserir informações na tabela clientes
 
-INSERT INTO clientes ( nome, sobrenome)
-	VALUES ("João", "Silva"),
-("Maria", "Souza");
+INSERT INTO clientes (nome, sobrenome, idade, endereco, email)  
+	VALUES 	('Abraham', 'Lincoln,', 16, 'Blumenau - Santa Catarina', 'al_Kentucky@outlook.com'),
+		('Donald', 'Trump', 45, 'Santos - São Paulo', 'gui.trump20@outlook.com'),
+		('Mike', 'Pence', 45, 'Lorena - São Paulo', 'pence2019@gmail.com'),
+		('Calvin', 'Coolidge', 30, 'Guarulhos - São Paulo', 'calvin_coolidge@gmail.com'),
+		('Charles', 'Dawes', 30, 'Guarulhos - São Paulo', 'charlinho_g_dawes@gmail.com'); 
 
 
 -- Busca basica
