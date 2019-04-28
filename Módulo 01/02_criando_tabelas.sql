@@ -16,7 +16,6 @@ CREATE TABLE autor(
     id_autor INT UNSIGNED NOT NULL AUTO_INCREMENT,
     nome VARCHAR(50) NOT NULL,
     sobrenome VARCHAR(50) NOT NULL,
-    data_nasc DATE,
     email varchar(50) NOT NULL,
     
 -- Chave Primaria
