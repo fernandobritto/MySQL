@@ -1,57 +1,21 @@
--- Criando uma Tabela
-CREATE TABLE clientes(
-    id_cliente INT UNSIGNED NOT NULL AUTO_INCREMENT,
-    nome VARCHAR(50) NOT NULL,
-    sobrenome VARCHAR(50) NOT NULL,
-    idade INT,
-    endereco varchar(100),
-    email varchar(50) NOT NULL,
-    
--- Chave Primaria
-      PRIMARY KEY (id_cliente)
-);
+-- Criando as tabelas do Bando de Dados da livraria El Ateneo Grand Splendid 
 
+--
+-- Estrutura da tabela `vendas`
+--
+CREATE TABLE IF NOT EXISTS `vendas` (
+  `vendas_id` int(11) NOT NULL auto_increment,
+  `data_de_vendas` datetime NOT NULL,
+  `inventario_id` mediumint(8) unsigned NOT NULL,
+  `cliente_id` smallint(5) unsigned NOT NULL,  
+  `funcionario_id` tinyint(3) unsigned NOT NULL,
+  `ultima_atualizacao` timestamp NOT NULL default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP,
+  PRIMARY KEY  (`vendas_id`),
+  UNIQUE KEY `data_de_vendas` (`data_de_vendas`,`inventario_id`,`cliente_id`),
+  KEY `idx_fk_inventario_id` (`inventario_id`),
+  KEY `idx_fk_cliente_id` (`cliente_id`),
+  KEY `idx_fk_funcionario_id` (`funcionario_id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=16050 ;
 
-CREATE TABLE autor(
-    id_autor INT UNSIGNED NOT NULL AUTO_INCREMENT,
-    nome VARCHAR(50) NOT NULL,
-    sobrenome VARCHAR(50) NOT NULL,
-    email varchar(50) NOT NULL,
-    
--- Chave Primaria
-      PRIMARY KEY (id_autor)
-);
-
-
-CREATE TABLE ordens(
-    id_orden INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    valor_orden VARCHAR(255) NOT NULL,
-    id_cliente INT
-);
-
-
-CREATE TABLE ordens_items(
-    id_item INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    item_preco DECIMAL(4,2) NOT NULL,
-    item_coment VARCHAR(250)
-);
-
-
-CREATE TABLE livros(
-    id_livro INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    id_autor INT NOT NULL,
-    title int NOT NULL,
-    data_publicacao date NOT NULL,
-    data_aquisicao date NOT NULL,
-    livro_coment varchar(250),
-    preco DECIMAL(4,2) NOT NULL	
-);
-
-
-CREATE TABLE livros_categoria(
-    id_livrocat INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    tipo_categoria varchar(250),
-    descricao varchar(500)	
-);
-
+-- --------------------------------------------------------
 
