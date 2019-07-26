@@ -22,7 +22,6 @@ CREATE TABLE IF NOT EXISTS `vendas` (
 --
 -- Estrutura da tabela `autor`
 --
-
 CREATE TABLE IF NOT EXISTS `autor` (
   `autor_id` smallint(5) unsigned NOT NULL auto_increment,
   `primeiro_nome` varchar(45) NOT NULL,
@@ -37,7 +36,6 @@ CREATE TABLE IF NOT EXISTS `autor` (
 --
 -- Estrutura da tabela `categoria`
 --
-
 CREATE TABLE IF NOT EXISTS `categoria` (
   `categoria_id` tinyint(3) unsigned NOT NULL auto_increment,
   `nome` varchar(25) NOT NULL,
