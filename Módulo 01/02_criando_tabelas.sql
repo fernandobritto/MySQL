@@ -19,3 +19,30 @@ CREATE TABLE IF NOT EXISTS `vendas` (
 
 -- --------------------------------------------------------
 
+--
+-- Estrutura da tabela `autor`
+--
+
+CREATE TABLE IF NOT EXISTS `autor` (
+  `autor_id` smallint(5) unsigned NOT NULL auto_increment,
+  `primeiro_nome` varchar(45) NOT NULL,
+  `ultimo_nome` varchar(45) NOT NULL,
+  `ultima_edicao` timestamp NOT NULL default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP,
+  PRIMARY KEY  (`autor_id`),
+  KEY `idx_autor_ultimo_nome` (`ultimo_nome`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=201 ;
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `categoria`
+--
+
+CREATE TABLE IF NOT EXISTS `categoria` (
+  `categoria_id` tinyint(3) unsigned NOT NULL auto_increment,
+  `nome` varchar(25) NOT NULL,
+  `ultima_edicao` timestamp NOT NULL default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP,
+  PRIMARY KEY  (`categoria_id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=17 ;
+
+-- --------------------------------------------------------
