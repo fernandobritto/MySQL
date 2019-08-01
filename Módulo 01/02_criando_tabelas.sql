@@ -44,3 +44,18 @@ CREATE TABLE IF NOT EXISTS `categoria` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=17 ;
 
 -- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `cidade`
+--
+
+CREATE TABLE IF NOT EXISTS `cidade` (
+  `cidade_id` smallint(5) unsigned NOT NULL auto_increment,
+  `cidade` varchar(50) NOT NULL,
+  `pais_id` smallint(5) unsigned NOT NULL,
+  `ultima_atualizacao` timestamp NOT NULL default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP,
+  PRIMARY KEY  (`cidade_id`),
+  KEY `idx_fk_pais_id` (`pais_id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=601 ;
+
+-- --------------------------------------------------------
