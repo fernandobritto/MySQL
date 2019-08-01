@@ -59,3 +59,42 @@ CREATE TABLE IF NOT EXISTS `cidade` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=601 ;
 
 -- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `cliente`
+--
+CREATE TABLE IF NOT EXISTS `cliente` (
+  `cliente_id` smallint(5) unsigned NOT NULL auto_increment,
+  `loja_id` tinyint(3) unsigned NOT NULL,
+  `primeiro_nome` varchar(45) NOT NULL,
+  `ultimo_nome` varchar(45) NOT NULL,
+  `email` varchar(50) default NULL,
+  `endereco_id` smallint(5) unsigned NOT NULL,
+  `ativo` tinyint(1) NOT NULL default '1',
+  `data_criacao` datetime NOT NULL,
+  `ultima_atualizacao` timestamp NOT NULL default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP,
+  PRIMARY KEY  (`cliente_id`),
+  KEY `idx_fk_loja_id` (`loja_id`),
+  KEY `idx_fk_endereco_id` (`endereco_id`),
+  KEY `idx_ultimo_nome` (`ultimo_nome`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=600 ;
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `endereco`
+--
+CREATE TABLE IF NOT EXISTS `endereco` (
+  `endereco_id` smallint(5) unsigned NOT NULL auto_increment,
+  `endereco` varchar(50) NOT NULL,
+  `endereco2` varchar(50) default NULL,
+  `bairro` varchar(20) NOT NULL,
+  `cidade_id` smallint(5) unsigned NOT NULL,
+  `cep` varchar(10) default NULL,
+  `telefone` varchar(20) NOT NULL,
+  `ultima_atualizacao` timestamp NOT NULL default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP,
+  PRIMARY KEY  (`endereco_id`),
+  KEY `idx_fk_cidade_id` (`cidade_id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=606 ;
+
+-- --------------------------------------------------------
