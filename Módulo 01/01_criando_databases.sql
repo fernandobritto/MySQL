@@ -1,7 +1,7 @@
 -- Bando de Dados para uma livraria virtual
 
 -- Criando um Banco de Dados
-CREATE DATABASE  IF NOT EXISTS `lojadelivros` /*!40100 DEFAULT CHARACTER SET utf8 */;
+CREATE DATABASE  IF NOT EXISTS `db_elateneo` /*!40100 DEFAULT CHARACTER SET utf8 */;
 
 
 -- Mostrando todos os bancos de dados que há no SGBD
