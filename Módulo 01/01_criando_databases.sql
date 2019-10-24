@@ -1,8 +1,7 @@
--- Bando de Dados para a Livraria El Ateneo Grand Splendid
+-- Bando de Dados para uma livraria virtual
 
 -- Criando um Banco de Dados
-CREATE DATABASE lojadelivros;
-CREATE DATABASE db_elateneo;
+CREATE DATABASE  IF NOT EXISTS `lojadelivros` /*!40100 DEFAULT CHARACTER SET utf8 */;
 
 
 -- Mostrando todos os bancos de dados que há no SGBD
