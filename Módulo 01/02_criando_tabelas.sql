@@ -1,4 +1,4 @@
--- Criando as tabelas do Bando de Dados da livraria El Ateneo Grand Splendid 
+-- Criando as tabelas 
 
 --
 -- Estrutura da tabela `vendas`
